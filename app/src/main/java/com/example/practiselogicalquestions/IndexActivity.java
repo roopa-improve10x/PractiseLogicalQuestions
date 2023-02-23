@@ -28,6 +28,10 @@ public class IndexActivity extends AppCompatActivity {
             Intent intent = new Intent(this, DivisibleBy5.class);
             startActivity(intent);
         });
+        binding.divisibleBy15.setOnClickListener(v -> {
+            Intent intent = new Intent(this, DivisibleBy15.class);
+            startActivity(intent);
+        });
     }
 
 }
