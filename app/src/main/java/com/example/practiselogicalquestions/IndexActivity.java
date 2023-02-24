@@ -32,6 +32,14 @@ public class IndexActivity extends AppCompatActivity {
             Intent intent = new Intent(this, DivisibleBy15.class);
             startActivity(intent);
         });
+        binding.discountBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, Discount.class);
+            startActivity(intent);
+        });
+        binding.farmBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FarmProblem.class);
+            startActivity(intent);
+        });
     }
 
 }
